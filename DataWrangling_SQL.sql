@@ -97,30 +97,32 @@ FROM Bookings b
 INNER JOIN Facilities f ON b.facid = f.facid
 INNER JOIN Members m ON b.memid = m.memid
 WHERE b.starttime LIKE  '2012-09-14%'
-AND (
-CASE WHEN b.memid =0
-THEN b.slots * f.guestcost
-ELSE b.slots * f.membercost
-END
-) > 30
+HAVING cost > 30
 ORDER BY cost DESC 
 
 /* Q9: This time, produce the same result as in Q8, but using a subquery. */
-SELECT * 
-FROM (
-SELECT f.name AS facility_name, CONCAT( m.firstname,' ', m.surname ) AS fullname, 
+SELECT bc.name as facility_name, CONCAT( m.firstname,' ', m.surname ) AS fullname, bc.cost
+FROM Members m, 
+(SELECT b.bookid, b.memid, f.name,
 CASE WHEN b.memid = 0
 THEN b.slots * f.guestcost
 ELSE b.slots * f.membercost
 END AS cost
-FROM Bookings b
-INNER JOIN Facilities f ON b.facid = f.facid
-INNER JOIN Members m ON b.memid = m.memid
-WHERE b.starttime LIKE  '2012-09-14%'
-) bc
-WHERE bc.cost > 30
-ORDER BY cost DESC
+FROM Bookings b, Facilities f
+WHERE b.facid = f.facid AND b.starttime LIKE '2012-09-14%') bc
+WHERE m.memid = bc.memid AND bc.cost > 30
+ORDER BY bc.cost DESC
 
 /* Q10: Produce a list of facilities with a total revenue less than 1000.
 The output of facility name and total revenue, sorted by revenue. Remember
 that there's a different cost for guests and members! */
+SELECT f.name AS facility_name, 
+SUM( CASE WHEN b.memid = 0
+THEN b.slots * f.guestcost
+ELSE b.slots * f.membercost
+END ) AS total_revenue
+FROM Bookings b
+INNER JOIN Facilities f ON b.facid = f.facid
+GROUP BY facility_name
+HAVING total_revenue < 1000
+ORDER BY total_revenue
