@@ -1,4 +1,4 @@
-# Capstone Project --- Predicting the Good Food Businesses on Yelp
+# Predicting the Good Food Businesses on Yelp
 
 ## Project Description
 Yelp is commonly used in our life when we want to find or checkout if a place is good to go for food or drink. As a heavy Yelp user, it occurred to my friends and me that stars rating doesn’t truly reflect whether a restaurant is good or not. We also need to consider the numbers of reviews, the average number of reviews and the contents of reviews to determine if it is a good restaurant to try out. However, it would take us more than few minutes, even an hour, to find good places and decide where to go. When we don’t have enough time, we often just pick a 4-5 stars rating restaurant, and often turns out not as good as we expect.
