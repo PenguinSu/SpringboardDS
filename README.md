@@ -1,5 +1,5 @@
 # SpringboardDS
-This repository contains all mini projects and two capstone projects I completed throughout the data science program.
+This repository contains all mini projects and two capstone projects completed throughout the data science program.
 
 ## DataWrangling
 * [Data Wrangling with SQL](https://github.com/PenguinSu/SpringboardDS/blob/master/DataWrangling_SQL.sql)
