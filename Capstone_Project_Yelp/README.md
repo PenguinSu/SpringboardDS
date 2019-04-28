@@ -11,5 +11,5 @@ Yelp is commonly used in our life when we want to find or checkout if a place is
 * [Data Storytelling Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/Data_Storytelling_Report.pdf)
 * [Exploratory Data Analysis Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/Exploratory_Data_Analysis_Report.pdf)
 * [In Depth Analysis Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/In_Depth_Analysis_Report.pdf)
-* [Mile Stone Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/Milestone_Report.pdf)
+* [Milestone Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/Milestone_Report.pdf)
 * [Final Report](https://github.com/PenguinSu/SpringboardDS/blob/master/Capstone_Project_Yelp/Documents/Final_Report.pdf)
