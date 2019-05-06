@@ -1,4 +1,4 @@
-# Time Series Forcast on International Traveling Demand
+# Time Series Forecast on International Traveling Demand
 Nowadays with the convenience of aire plane, people travel internationally for business or vacation. Travel businesses adjust their price based on current demand throughout the whole year. Knowing the demand ahead could help price setting.
 
 ## Description of Datasets:
