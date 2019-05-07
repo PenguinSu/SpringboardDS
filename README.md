@@ -24,5 +24,5 @@ This repository contains all mini projects and two capstone projects completed t
 ## Capstone Project Yelp
 [Main Project Page](https://github.com/PenguinSu/SpringboardDS/tree/master/Capstone_Project_Yelp)
 
-## Capstone Project Tourism (Ongoing)
+## Capstone Project Tourism
 [Main Project Page](https://github.com/PenguinSu/SpringboardDS/tree/master/Capstone_Project_Tourism)
